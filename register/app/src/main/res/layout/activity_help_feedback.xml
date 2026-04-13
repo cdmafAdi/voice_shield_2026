@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_bg">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/glass_gradient_bg"
+        android:padding="14dp"
+        android:src="@android:drawable/ic_menu_revert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.15"
+        android:text="HELP &amp; SUPPORT"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/btnBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnBack" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:paddingBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBack">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEND FEEDBACK"
+                android:textColor="#D8B4FE"
+                android:fontFamily="sans-serif-black"
+                android:textSize="13sp"
+                android:letterSpacing="0.2"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="14dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/glass_card_stroke"
+                android:orientation="vertical"
+                android:padding="22dp"
+                android:layout_marginBottom="40dp">
+
+                <EditText
+                    android:id="@+id/etFeedbackMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="top"
+                    android:hint="How can we improve VoiceShield?"
+                    android:textColorHint="#50FFFFFF"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSubmitFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/glass_gradient_bg"
+                    android:text="SEND TO TEAM"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-black"
+                    android:letterSpacing="0.1" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FREQUENTLY ASKED"
+                android:textColor="#00FFC5"
+                android:fontFamily="sans-serif-black"
+                android:textSize="13sp"
+                android:letterSpacing="0.2"
+                android:layout_marginBottom="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_premium_card_border"
+                android:orientation="vertical"
+                android:padding="22dp"
+                android:layout_marginBottom="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="How does the AI detect scams?"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="15sp"/>
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="2.5dp"
+                    android:background="#6600FFC5"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.8"
+                    android:text="Our neural engine analyzes voice patterns and intent in real-time to flag suspicious activity immediately."
+                    android:textColor="#FFFFFF"
+                    android:lineSpacingExtra="5dp"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-light"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_premium_card_border"
+                android:orientation="vertical"
+                android:padding="22dp"
+                android:layout_marginBottom="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Is my data private?"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="15sp"/>
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="2.5dp"
+                    android:background="#6600FFC5"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.8"
+                    android:text="VoiceShield uses zero-knowledge encryption. We never store or listen to your personal conversations."
+                    android:textColor="#FFFFFF"
+                    android:lineSpacingExtra="5dp"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-light"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_premium_card_border"
+                android:orientation="vertical"
+                android:padding="22dp"
+                android:layout_marginBottom="30dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What is the Neural Shield?"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="15sp"/>
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="2.5dp"
+                    android:background="#6600FFC5"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.8"
+                    android:text="It's our advanced interceptor that creates a digital barrier between you and AI-generated deepfake voices."
+                    android:textColor="#FFFFFF"
+                    android:lineSpacingExtra="5dp"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-light"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="VoiceShield Encryption Active"
+                android:textColor="#40FFFFFF"
+                android:textSize="11sp"
+                android:letterSpacing="0.1"
+                android:fontFamily="monospace"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

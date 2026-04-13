@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="luxury_purple_start">#8E24AA</color>
+    <color name="luxury_purple_end">#4A148C</color>
+    <color name="neon_pink">#FF1744</color>
+    <color name="glass_white">#1AFFFFFF</color>
+    <color name="glass_border">#33FFFFFF</color>
+    <color name="bg_dark">#07020D</color>
+</resources>

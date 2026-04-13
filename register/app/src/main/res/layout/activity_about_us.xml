@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_bg">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/glass_gradient_bg"
+        android:padding="16dp"
+        android:src="@android:drawable/ic_menu_revert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tvAboutHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.2"
+        android:text="ABOUT VOICESHIELD"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/btnBack"
+        app:layout_constraintStart_toEndOf="@id/btnBack"
+        app:layout_constraintTop_toTopOf="@id/btnBack" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBack">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+                <View
+                    android:id="@+id/heroGlow"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circular_risk_progress"
+                    android:backgroundTint="#D8B4FE"
+                    android:alpha="0.4"/>
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@android:drawable/ic_lock_idle_lock"
+                    app:tint="#FFFFFF" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/glass_card_stroke"
+                android:backgroundTint="#D8B4FE"
+                android:padding="1.5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/glass_gradient_bg"
+                    android:backgroundTint="#CC2D1B4D"
+                    android:orientation="vertical"
+                    android:padding="26dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:letterSpacing="0.3"
+                        android:text="OUR MISSION"
+                        android:textColor="#D8B4FE"
+                        android:textSize="13sp" />
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="#4A1D8A"
+                        android:alpha="0.8"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Neural Protection"
+                        android:textColor="#FFFFFF"
+                        android:textSize="26sp"
+                        android:fontFamily="sans-serif-black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="To provide every user with a neural-grade shield against AI-generated scams, ensuring your digital conversations remain authentic."
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:lineSpacingExtra="8dp"
+                        android:alpha="0.85" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/glass_card_stroke"
+                android:backgroundTint="#D8B4FE"
+                android:padding="1.5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/glass_gradient_bg"
+                    android:backgroundTint="#CC2D1B4D"
+                    android:orientation="vertical"
+                    android:padding="26dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:letterSpacing="0.3"
+                        android:text="OUR VISION"
+                        android:textColor="#00FFC5"
+                        android:textSize="13sp" />
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="#4A1D8A"
+                        android:alpha="0.8"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A Scam-Free Future"
+                        android:textColor="#FFFFFF"
+                        android:textSize="26sp"
+                        android:fontFamily="sans-serif-black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="We envision a world where technology works for humanity. VoiceShield aims to be the global standard for communication integrity."
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:lineSpacingExtra="8dp"
+                        android:alpha="0.85" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/glass_card_stroke"
+                android:backgroundTint="#D8B4FE"
+                android:padding="1.5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/glass_gradient_bg"
+                    android:backgroundTint="#CC2D1B4D"
+                    android:orientation="vertical"
+                    android:padding="26dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:letterSpacing="0.3"
+                        android:text="WHAT WE DO"
+                        android:textColor="#FFD600"
+                        android:textSize="13sp" />
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="#4A1D8A"
+                        android:alpha="0.8"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Intercept &amp; Neutralize"
+                        android:textColor="#FFFFFF"
+                        android:textSize="26sp"
+                        android:fontFamily="sans-serif-black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="We utilize real-time neural interception to identify deepfake patterns and malicious intent before they reach your ears."
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:lineSpacingExtra="8dp"
+                        android:alpha="0.85" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CORE PROTOCOLS"
+                android:textColor="#B3FFFFFF"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.2"
+                android:layout_marginBottom="18dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/glass_card_stroke"
+                android:backgroundTint="#D8B4FE"
+                android:padding="1.2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/glass_gradient_bg"
+                    android:backgroundTint="#33FFFFFF"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="22dp">
+                    <View android:layout_width="12dp" android:layout_height="12dp" android:background="@drawable/status_dot_mint" android:backgroundTint="#00FFC5"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="20dp" android:text="Zero-Knowledge Privacy" android:textColor="#FFFFFF" android:fontFamily="sans-serif-black" android:textSize="17sp"/>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/glass_card_stroke"
+                android:backgroundTint="#D8B4FE"
+                android:padding="1.2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/glass_gradient_bg"
+                    android:backgroundTint="#33FFFFFF"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="22dp">
+                    <View android:layout_width="12dp" android:layout_height="12dp" android:background="@drawable/status_dot_mint" android:backgroundTint="#D8B4FE"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="20dp" android:text="Real-Time Neural AI" android:textColor="#FFFFFF" android:fontFamily="sans-serif-black" android:textSize="17sp"/>
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="v1.0.4 STABLE REL • 2026"
+                android:textColor="#4DFFFFFF"
+                android:textSize="11sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="40dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

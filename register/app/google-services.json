@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "202385259392",
+    "project_id": "voiceshield-b485e",
+    "storage_bucket": "voiceshield-b485e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202385259392:android:be0f4108b35402be715f65",
+        "android_client_info": {
+          "package_name": "com.example.register"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLRWzhYN4Zfzj9u5w_EmF05hzSsrPDKRw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

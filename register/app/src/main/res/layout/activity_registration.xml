@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_bg"
+    android:clipChildren="false">
+
+    <View
+        android:id="@+id/ambientGlowOrb"
+        android:layout_width="450dp"
+        android:layout_height="450dp"
+        android:background="@drawable/ambient_glow_orb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="-280dp"
+        android:layout_marginStart="-180dp"
+        android:background="@drawable/icon_sphere_bg"
+        android:alpha="0.25"
+        android:backgroundTint="#D8B4FE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="-100dp"
+        android:layout_marginEnd="-100dp"
+        android:background="@drawable/icon_sphere_bg"
+        android:alpha="0.1"
+        android:backgroundTint="#9C27B0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:clipChildren="false"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clipChildren="false"
+            android:padding="32dp">
+
+            <Space android:layout_width="match_parent" android:layout_height="60dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/glass_card_purple_tint"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"
+                android:layout_marginBottom="16dp">
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:background="@drawable/premium_round_outline"
+                    android:backgroundTint="#00FFC5"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SECURE ENROLLMENT"
+                    android:textColor="#D8B4FE"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.3"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/headerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Initialize\nIdentity"
+                android:textColor="#FFFFFF"
+                android:textSize="46sp"
+                android:fontFamily="sans-serif-black"
+                android:lineHeight="50sp"
+                android:letterSpacing="-0.03" />
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="4dp"
+                android:background="#D8B4FE"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="24dp"/>
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:hint="Full Name"
+                android:drawableStart="@android:drawable/ic_menu_myplaces"
+                android:drawablePadding="16dp"
+                android:drawableTint="#80FFFFFF"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/glass_card_stroke"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#4DFFFFFF"
+                android:textSize="15sp"
+                android:inputType="textPersonName"
+                android:clipChildren="false"/>
+
+            <Space android:layout_width="match_parent" android:layout_height="16dp" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:hint="Mobile Protocol"
+                android:drawableStart="@android:drawable/ic_menu_call"
+                android:drawablePadding="16dp"
+                android:drawableTint="#80FFFFFF"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/glass_card_stroke"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#4DFFFFFF"
+                android:textSize="15sp"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:clipChildren="false"/>
+
+            <Space android:layout_width="match_parent" android:layout_height="16dp" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:hint="Secure Email Link"
+                android:drawableStart="@android:drawable/ic_dialog_email"
+                android:drawablePadding="16dp"
+                android:drawableTint="#80FFFFFF"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/glass_card_stroke"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#4DFFFFFF"
+                android:textSize="15sp"
+                android:inputType="textEmailAddress"
+                android:clipChildren="false"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="By continuing, you activate the E2E encryption shield."
+                android:textColor="#66FFFFFF"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light"/>
+
+            <Space android:layout_width="match_parent" android:layout_height="30dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnContinue"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:background="@drawable/btn_glow_purple"
+                android:text="ACTIVATE SHIELD"
+                android:textAllCaps="true"
+                android:letterSpacing="0.2"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-black"
+                android:elevation="12dp"
+                android:outlineProvider="background"
+                android:translationZ="8dp"
+                android:stateListAnimator="@null" />
+
+            <LinearLayout
+                android:id="@+id/tvAlreadyAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:layout_marginTop="20dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Authorized Personnel? "
+                    android:textColor="#B3FFFFFF"
+                    android:textSize="13sp"
+                    android:letterSpacing="0.05"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign In"
+                    android:textColor="#D8B4FE"
+                    android:textSize="13sp"
+                    android:letterSpacing="0.05"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

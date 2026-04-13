@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_bg"
+    android:clipChildren="false">
+
+    <View
+        android:id="@+id/ambientGlowOrb"
+        android:layout_width="450dp"
+        android:layout_height="450dp"
+        android:background="@drawable/ambient_glow_orb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="450dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="-200dp"
+        android:layout_marginEnd="-150dp"
+        android:background="@drawable/icon_sphere_bg"
+        android:alpha="0.18"
+        android:backgroundTint="#D8B4FE"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:clipChildren="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/glass_card_purple_tint"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="6dp"
+            android:layout_marginBottom="12dp">
+            <View
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:background="@drawable/status_dot_mint"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACCESS PORTAL"
+                android:textColor="#D8B4FE"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.4"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome\nBack"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
+            android:fontFamily="sans-serif-black"
+            android:lineHeight="54sp"
+            android:letterSpacing="-0.04"
+            android:layout_marginBottom="12dp"/>
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="4dp"
+            android:background="#D8B4FE"
+            android:layout_marginBottom="28dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Authorize your link to the security network."
+            android:textColor="#B3FFFFFF"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginBottom="40dp"/>
+
+        <EditText
+            android:id="@+id/etLoginName"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/glass_card_stroke"
+            android:hint="Identity Name"
+            android:drawableStart="@android:drawable/ic_menu_myplaces"
+            android:drawablePadding="16dp"
+            android:drawableTint="#80FFFFFF"
+            android:paddingHorizontal="20dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#4DFFFFFF"
+            android:textSize="16sp"
+            android:inputType="textPersonName"
+            android:letterSpacing="0.02"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <EditText
+            android:id="@+id/etLoginPhone"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/glass_card_stroke"
+            android:hint="Secure Phone"
+            android:drawableStart="@android:drawable/ic_menu_call"
+            android:drawablePadding="16dp"
+            android:drawableTint="#80FFFFFF"
+            android:paddingHorizontal="20dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#4DFFFFFF"
+            android:textSize="16sp"
+            android:inputType="phone"
+            android:letterSpacing="0.05"
+            android:maxLength="10"/>
+
+        <Space android:layout_width="match_parent" android:layout_height="44dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:background="@drawable/btn_glow_purple"
+            android:text="INITIALIZE PROTECTION"
+            android:textAllCaps="true"
+            android:letterSpacing="0.2"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-black"
+            android:elevation="12dp"
+            android:outlineProvider="background"
+            android:translationZ="8dp"
+            android:stateListAnimator="@null" />
+
+        <LinearLayout
+            android:id="@+id/tvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Establish New Identity? "
+                android:textColor="#B3FFFFFF"
+                android:textSize="13sp"
+                android:letterSpacing="0.05"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Account"
+                android:textColor="#D8B4FE"
+                android:textSize="13sp"
+                android:letterSpacing="0.05"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

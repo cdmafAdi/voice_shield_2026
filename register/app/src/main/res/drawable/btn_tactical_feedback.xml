@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#4D00FFC5"> <item>
+    <selector>
+        <item android:state_pressed="true">
+            <shape android:shape="rectangle">
+                <corners android:radius="16dp" />
+                <solid android:color="#3300FFC5" />
+                <stroke android:width="1.5dp" android:color="#CCFFFFFF" />
+            </shape>
+        </item>
+
+        <item android:drawable="@drawable/btn_glow_quantum" />
+    </selector>
+</item>
+</ripple>

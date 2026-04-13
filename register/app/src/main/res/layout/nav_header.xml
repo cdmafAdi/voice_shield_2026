@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:clipChildren="false">
+
+    <View
+        android:id="@+id/ambientGlowOrbHeader"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="-150dp"
+        android:layout_marginEnd="-120dp"
+        android:alpha="0.4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="start"
+        android:paddingHorizontal="32dp"
+        android:paddingBottom="20dp"
+        android:clipChildren="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/ivUserAvatar"
+            android:layout_width="330dp"
+            android:layout_height="330dp"
+            android:minWidth="350dp"
+            android:minHeight="350dp"
+            android:layout_marginTop="-100dp"
+            android:layout_marginBottom="-100dp"
+            android:layout_marginStart="-115dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo7"
+            android:padding="0dp"
+            app:tint="#D8B4FE" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENCRYPTION ACTIVE"
+            android:textColor="#D8B4FE"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.3"
+            android:layout_marginStart="2dp" />
+
+        <TextView
+            android:id="@+id/tvHeaderName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="sans-serif-black"
+            android:text="WELCOME, USER"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textAllCaps="true"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/tvHeaderPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+91 00000 00000"
+            android:textColor="#80FFFFFF"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="1dp"
+            android:letterSpacing="0.05" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
